@@ -1,0 +1,8 @@
+name: Greet on Push
+on: [push]
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a greeting
+        run: echo "Hello! This workflow ran automatically on push."
